@@ -1,0 +1,2 @@
+GET /v1/orders/{uuid:9277c4b4-2c7a-4612-a693-1e738a83eb54}
+X-Auth-Token: CALL_EXTERNAL|syntribos.extensions.identity.client:get_token_v3:["user"]|

@@ -1,0 +1,14 @@
+POST /v1/orders
+X-Auth-Token: CALL_EXTERNAL|syntribos.extensions.identity.client:get_token_v3:["user"]|
+
+{
+    "type":"key",
+    "meta":
+        {
+            "name":"secretname",
+            "algorithm": "AES",
+            "bit_length": 256,
+            "mode": "cbc",
+            "payload_content_type":"application/octet-stream"
+        }
+}
