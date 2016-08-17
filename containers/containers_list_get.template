@@ -1,0 +1,2 @@
+GET /v1/containers?offset=0&limit=10
+X-Auth-Token: CALL_EXTERNAL|syntribos.extensions.identity.client:get_token_v3:["user"]|

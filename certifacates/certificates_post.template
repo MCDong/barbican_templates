@@ -1,0 +1,11 @@
+POST /v1/orders
+Content-Type: application/json
+X-Auth-Token: CALL_EXTERNAL|syntribos.extensions.identity.client:get_token_v3:["user"]|
+
+{
+    "type": "asymmetric",
+    "meta": {
+        "algorithm": "rsa",
+        "bit_length": 2048
+    }
+}

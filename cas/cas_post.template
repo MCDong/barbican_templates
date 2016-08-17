@@ -1,0 +1,9 @@
+POST /v1/cas
+Accept: application/json
+Content-type: application/json
+X-Auth-Token: CALL_EXTERNAL|syntribos.extensions.identity.client:get_token_v3:["user"]|
+
+ {"name": "Subordinate CA",
+  "description": "Test Snake Oil Subordinate CA",
+  "parent_ca_ref": "http://localhost:9311/v1/cas/d9e853eb-aea4-4002-9be7-78665062f393",
+  "subject_dn": "CN=Subordinate CA, O=example.com"}

@@ -1,0 +1,13 @@
+POST /v1/containers/{uuid:33c61d46-0c19-4084-83d8-5e0c9d0b6a9f}
+X-Auth-Token: CALL_EXTERNAL|syntribos.extensions.identity.client:get_token_v3:["user"]|
+
+{
+    "type": "generic",
+    "name": "container name",
+    "secret_refs": [
+        {
+            "name": "private_key",
+            "secret_ref": "https://{barbican_host}/v1/secrets/{secret_uuid}"
+        }
+    ]
+}
